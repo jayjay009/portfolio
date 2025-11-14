@@ -76,20 +76,6 @@
     font-size: 0.9rem;
   }
 
-  /* GALLERY (PHOTOGRAPHY SECTION) */
-  #slide .item {
-    width: 95%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    margin: 0.5rem auto;
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
 
   /* CONTACT SECTION */
   #contact {
@@ -111,21 +97,6 @@
   footer .nav-links {
     flex-direction: column;
     gap: 0.5rem;
-  }
-    #slide .item {
-    width: 95%;
-    height: 200px;        /* Adjust for small screens */
-    margin: 0.5rem auto;
-    border-radius: 10px;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  #slide .content .name {
-    font-size: 1.1rem;
-    padding: 0.2rem 0.5rem;
   }
 
 }
