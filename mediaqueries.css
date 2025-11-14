@@ -1,104 +1,116 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #skills {
-    height: fit-content;
-  }
-}
+@media screen and (max-width: 600px) {
 
-@media screen and (max-width: 1200px) {
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* NAVBAR */
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
+    justify-content: space-between;
+    padding: 1rem;
   }
-  #photography,
-  .photography-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .photography-sub-title {
-    font-size: 1.25rem;
-  }
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
+
+  /* PROFILE SECTION */
+  #profile {
+    display: block;
+    height: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  .section__pic-container {
+    width: 85%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto 1rem;
+  }
+
+  .section__pic-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.1rem;
+  }
+
+  /* ABOUT SECTION */
+  #about .section-container {
+    display: block;
     text-align: center;
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
+
+  .about-pic {
+    width: 85%;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* SKILLS */
+  .article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  article {
+    font-size: 0.9rem;
+  }
+
+  /* GALLERY (PHOTOGRAPHY SECTION) */
+  #slide .item {
+    width: 95%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 0.5rem auto;
+  }
+
+  .buttons {
+    display: flex;
     justify-content: center;
+    gap: 1rem;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+
+  /* CONTACT SECTION */
+  #contact {
+    height: auto;
+    padding: 1rem 0;
   }
-  .title {
-    font-size: 2rem;
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  .text-container {
-    text-align: justify;
+
+  /* FOOTER */
+  footer {
+    padding: 1rem;
+    text-align: center;
   }
+
+  footer .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
 }
