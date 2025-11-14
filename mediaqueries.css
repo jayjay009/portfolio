@@ -112,5 +112,20 @@
     flex-direction: column;
     gap: 0.5rem;
   }
+    #slide .item {
+    width: 95%;
+    height: 200px;        /* Adjust for small screens */
+    margin: 0.5rem auto;
+    border-radius: 10px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #slide .content .name {
+    font-size: 1.1rem;
+    padding: 0.3rem 0.5rem;
+  }
 
 }
